@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="editor.css">
+</head>
+<body>
+    <div class="container">
+        <!-- img part -->
+        <div class="image">
+            <div class="img">
+                <img  alt="" id="img">
+            </div>
+            <div class="upload">
+                <label for="file">upload image</label>
+                <input type="file" name="" id="file">
+            </div>
+        </div>
+        <!-- filters part -->
+        <div class="filters">
+            <ul>
+             <li>
+                 <lable for="sat">saturate</lable>
+                 <input type="range" name="" id="sat" min="0" max="200" value="100">
+             </li>
+             <li>
+                 <lable for="cont">contrast</lable>
+                 <input type="range" name="" id="cont" min="0" max="200" value="100">
+             </li>
+             <li>
+                 <lable for="bri">brightness</lable>
+                 <input type="range" name="" id="bri" min="0" max="200" value="100">
+             </li>
+             <li>
+                 <lable for="sep">sepia</lable>
+                 <input type="range" name="" id="sep" min="0" max="200" value="0">
+             </li>
+             <li>
+                 <lable for="gray">grayscale</lable>
+                 <input type="range" name="" id="gray" min="0" max="1" value="0" step="0.1">
+             </li>
+             <li>
+                 <lable for="blur">blur</lable>
+                 <input type="range" name="" id="blur" min="0" max="10" value="0" step="0.1">
+             </li>
+             <li>
+                 <lable for="hue">hue-rotate</lable>
+                 <input type="range" name="" id="hue" min="0" max="350" value="0">
+             </li>
+             <li>
+                 <a download="true" id="down">download</a>
+                 <button type="reset" id="reset" onclick="resetImg()">reset</button>
+             </li>
+            </ul>
+         </div>
+    </div>
+
+
+
+    <script src="editor.js"></script>
+</body>
+</html>
